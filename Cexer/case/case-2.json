@@ -1,0 +1,107 @@
+{
+    "CAN": {
+        "polling_datas": [
+            {
+                "comment": "test",
+                "receive": {
+                    "id": 1,
+                    "data": [
+                        5
+                    ]
+                },
+                "send": [
+                    {
+                        "id": 2,
+                        "data": [
+                            1,
+                            2,
+                            3
+                        ]
+                    },
+                    {
+                        "id": 3,
+                        "data": [
+                            1,
+                            2,
+                            3
+                        ]
+                    }
+                ],
+                "delay": 0
+            },
+            {
+                "comment": "test2",
+                "receive": {
+                    "id": 4,
+                    "data": [
+                        6
+                    ]
+                },
+                "send": [
+                    {
+                        "id": 5,
+                        "data": []
+                    }
+                ],
+                "delay": 0
+            },
+            
+            {
+                "comment": "test3",
+                "receive": {
+                    "id": 5,
+                    "data": [
+                        3
+                    ]
+                },
+                "send": [
+                    {
+                        "id": 6,
+                        "data": [],
+                        "append": [
+                            0,
+                            250
+                        ]
+                    }
+                ],
+                "delay": 0
+            },
+    "loop": false,
+    "send_timeout": 0.00001,
+    "case_timeout": 30
+},
+"SERIAL":{
+    "datas":[{
+    "tx":[1,2,3,4],
+    "rx":[1, 2, 3, 4, 5, 6],
+    "delay": 1
+},
+{
+    "tx":[1,2,3,4],
+    "rx":[1, 2, 3, 4, 5, 6],
+    "delay": 1
+}],
+"loop": false,
+"loop_delay": 10,
+"pre_delay": 15,
+"interface": "/dev/ttyACM0",
+"timeout": 30
+},
+"GPIO":{
+    "pin":[37],
+    "init_level": true,
+    "duration": 30,
+    "loop" : false,
+    "timeout": 30
+},
+"POWER_SUPPLY":{
+    "voltage": 24,
+    "current": 2,
+    "ocp": 16,
+    "ovp": 60,
+    "delay": 120,
+    "loop": false,
+    "addr": 34,
+    "model": "citric"
+}
+}

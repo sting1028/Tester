@@ -1,0 +1,7 @@
+/__pycache__/
+/env/
+*.pyc
+/Acqer.egg-info/
+/.eggs/
+/build/
+/dist/
